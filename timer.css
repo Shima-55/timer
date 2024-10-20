@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  border: 3px solid #3f51b5;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #3f51b5;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+#target-time {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid #3f51b5;
+  border-radius: 5px;
+}
+
+#timer {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  color: #3f51b5;
+  font-weight: bold;
+}
+
+.buttons button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#start {
+  background-color: #4CAF50; /* グリーン */
+}
+
+
+#reset {
+  background-color: #FFC107; /* イエロー */
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+
+.buttons button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
