@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>就活用タイマー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>就活用タイマー</h1>
+    <div class="input-container">
+      <label for="target-time">目標時間を入力 (分):</label>
+      <input type="number" id="target-time" min="1" placeholder="例: 10">
+    </div>
+    <div id="timer">00:00</div>
+    <div class="buttons">
+      <button id="start">スタート</button>
+      <button id="stop-sound" style="display:none;">音を止める</button>
+      <button id="reset">リセット</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
